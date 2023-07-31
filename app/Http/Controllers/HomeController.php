@@ -25,6 +25,7 @@ class HomeController extends Controller
     public function index()
     {
         // dd(Contact::all());
-        return view('home', ['contacts' => Contact::all() ]);
+        // return view('home', ['contacts' => Contact::all() ]);
+        return "Hello World!";
     }
 }
