@@ -44,8 +44,8 @@ Copia lo siguiente al final del archivo: `export PATH="/opt/lampp/bin:$PATH"` , 
 Haz un logout de tu sesion y vuelve a ingresar
 Abre una terminal y escribe de vuelta
 ```bash
-./php --version
-./mysql --version
+php --version
+mysql --version
 ```
 Si es que te salen las versiones, significa que ya tienes acceso global a PHP y MySQL
 Ahora ejecuta inicia el servidor apache utilizando el siguiente comando:
