@@ -65,7 +65,7 @@ curl -sS https://getcomposer.org/installer -o composer-setup.php
 ```
 Verificar la integridad de la instalación
 ```bash
-$ HASH=`curl -sS https://composer.github.io/installer.sig`
+HASH=`curl -sS https://composer.github.io/installer.sig`
 ```
 ```bash
 echo $HASH
