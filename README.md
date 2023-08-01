@@ -182,7 +182,7 @@ php artisan serve
 ## Logearte
 Puedes logearte con el usuario predeterminado utilizando el siguiente comando
 ```bash
-curl -X POST http://localhost:8000/login -d "email=email@example.com" -d "password=test1234"
+curl -L -b /dev/null -d "email=email@example.com" -d "password=test1234" http://127.0.0.1:8000/login
 ```
 
 
