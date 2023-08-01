@@ -87,7 +87,7 @@ sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 ```
 En caso de que no encuentre el sudo php, la solucion seria crear un enlace simbolico, si no te sucede eso, omitir este paso. 
 ```bash
-sudo ln -s /ruta/a/tu/carpeta/xampp/bin/php /usr/local/bin/php
+sudo ln -s /opt/lampp/bin/php /usr/local/bin/php
 ```
 
 Verá un resultado similar a este:
