@@ -85,7 +85,7 @@ Para instalar composer de manera global, utilice el siguiente comando que lo des
 ```bash
 sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 ```
-En caso de que no encuentre el sudo php, la solucion seria crear un enlace simbolico 
+En caso de que no encuentre el sudo php, la solucion seria crear un enlace simbolico, si no te sucede eso, omitir este paso. 
 ```bash
 sudo ln -s /ruta/a/tu/carpeta/xampp/bin/php /usr/local/bin/php
 ```
@@ -141,21 +141,18 @@ composer install
 npm install
 ```
 El ultimo comando asume que ya tienes el gestor de paquetes npm instalado.
-## Generar la clave de aplicación
 
-Laravel utiliza una clave de aplicación para encriptar datos de forma segura. Debes generar una clave única para tu proyecto que será utilizada para este propósito.
+## Configurar el archivo .env 
 
-Ejecuta el siguiente comando en tu terminal:
-
+En la terminal, ya situado en el directorio del proyecto, abrelo con tu editor de texto de preferencia
+ejemplo con vs code
 ```
-php artisan key:generate
+cd contact-app
+code .
 ```
-
-
-## Configurar la base de datos
 
 1. Renombra el archivo `.env.example` a `.env`.
-2. Abre el archivo `.env` y configura la conexión a la base de datos con tu conexión local a MySQL:
+2. Abre el archivo `.env` y configura la conexión a la base de datos con tu conexión local a MySQL (Por defecto xampp no tiene definida una password):
 
 ```
 DB_CONNECTION=mysql DB_HOST=127.0.0.1 
@@ -164,17 +161,17 @@ DB_DATABASE=tu_nombre_de_base_de_datos
 DB_USERNAME=tu_usuario_de_mysql
 DB_PASSWORD=tu_contraseña_de_mysql
 ```
-
+Luego de tener el archivo .env ejecuta el siguiente comando:
+```
+php artisan key:generate
+```
 
 ## Ejecutar migraciones y seeders
-
-Las migraciones de Laravel te permiten interactuar con la base de datos de forma estructurada y controlada. Ejecuta las migraciones para crear las tablas necesarias en la base de datos:
+Para ejecutar las migraciones y seeders ejecuta el sgte comando
 
 ```
 php artisan migrate --seed
 ```
-
-
 ## Servir el proyecto
 
 Utiliza el siguiente comando para ejecutar el servidor de desarrollo y acceder al proyecto en tu navegador:
