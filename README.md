@@ -5,8 +5,6 @@
 
 ## Requisitos
 
-## Requisitos
-
 - Docker y Docker Compose deben estar instalados en tu sistema. Puedes descargar Docker Desktop desde [la página oficial de Docker](https://www.docker.com/get-started).
 
 ## Instalación
