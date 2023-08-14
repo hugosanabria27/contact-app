@@ -1,12 +1,47 @@
 # Contact-app
 
+
+## Instalar usando Docker
+
+## Requisitos
+
+## Requisitos
+
+- Docker y Docker Compose deben estar instalados en tu sistema. Puedes descargar Docker Desktop desde [la página oficial de Docker](https://www.docker.com/get-started).
+
+## Instalación
+
+Clona este repositorio en tu máquina local:
+
+   ```bash
+   git clone https://github.com/hugosanabria27/contact-app
+   cd contact-app
+   ```
+Configura el archivo .env:
+
+Copia el contenido de .env.example en un nuevo archivo .env y ajusta las variables de entorno según tus preferencias y configuración de base de datos.
+
+Ejecuta Docker Compose:
+
+En la carpeta raíz del proyecto, ejecuta:
+```bash
+docker-compose up -d
+```
+
+Ejecuta migraciones y seeders para la base de datos
+```bash
+docker-compose exec main php artisan migrate -seed
+```
+
+  
+
+## Instalar todo lo necesario en Linux (Debian based)
 ## Requerimientos
 - PHP: 8.0.2 o superior.
 - Composer 2 en adelante
 - [XAMPP 8.2.4](https://www.apachefriends.org/es/download.html) (Recomendado)
 - [Node.js](https://nodejs.org/en/download)
 
-## Instalar todo lo necesario en Linux (Debian based)
 ### Instalación DE XAMPP
 Descarga la version 8.2.4 de XAMPP
 
